@@ -3,3 +3,181 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* .navbar{
+  position:absolute;
+  top: 0;
+  left:0;
+ 
+} */
+
+
+
+body{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.cabecera{
+  color: aliceblue;
+  background: #00004f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  
+   
+}m
+.cabecera>span:first-child{
+  font-size: 28px;
+  
+}
+
+.cabecera>div{
+  justify-self: flex-end;
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,240px);
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: rgb(229, 227, 248);
+}
+
+.lanpad{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap:20px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 1px darkgray;
+  background-color: rgb(255, 250, 243);
+}
+
+.lanpad>.head{
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+ }
+.rocket_body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height:80px;
+}
+
+ .rocket_foot{
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+
+ }
+
+
+.rocket div:has(>img){
+  background: linear-gradient(#00000044,#5e1b1b09 );
+}
+
+
+.navbar{
+  padding:2rem;
+  border-left: 1px solid black;
+  box-shadow: 3px 0 3px darkgray;
+}
+
+.navbar>ul{
+  margin-top: 1rem;
+}
+.navbar>span{
+  font-weight: bold;
+  padding-inline: 1rem;
+  border-bottom: #00004f 1px solid;
+  font-size: 20px;
+  /* display: block;
+  margin: auto;
+  
+  width: min-content; */ 
+}
+
+.navbar li{
+  padding: .5rem;
+  border: 1px solid transparent;
+ 
+}
+
+.navbar li:active{
+  border-color: green;
+  background-color: blanchedalmond;
+  border-radius: 4px;
+  
+}
+
+
+
+li::after{
+  content:">";
+  
+}
+
+.menusvg{
+  color: black;
+  width: 24px;
+
+}
+
+h2 {
+  display: flex;
+  gap: 0 .3rem;
+  margin-block-end: 2rem;
+}
+
+
+.status{
+  border-radius:16px;
+  background: rgba(18, 224, 28, 0.507);
+  padding: 4px;
+  padding-inline: 12px;
+  align-self: flex-start;
+
+}
+
+.name{
+  font-size: large;
+}
+
+.description,.details{
+  --lines:5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines);
+  line-clamp: 5;
+}
+
+.link_details{
+  border:none;
+  background: lightskyblue;
+  color: blue ;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 720px) {
+
+  body{
+    grid-template-columns: 1fr;
+  }
+  .navbar{
+    display: none;
+  }
+}
+
+
