@@ -1,27 +1,11 @@
 # Prueba-técnica-junior
 
-Repositorio de las pruebas técnicas para el cargo de desarrollador Junior en la empresa Soluciones en epidemiología y salud ocupacional PC
+Prueba técnica reuelta para la demostración de las habilidades del manejo de datos 
 
 ## Notas importantes
 
-1. En la prueba técnica no se pueden utilizar librerías de terceros.
-2. La estructura de las carpetas de la aplicación es a criterio propio.
-3. Estruvo JSON de la API: https:ctura del archi//github.com/r-spacex/SpaceX-API/blob/master/docs/landpads/v4/all.md,   https://api.spacexdata.com/v4/payloads
-4. Para las peticiones Http puede usar Axios o Fetch API u otra librería que tenga conocimiento.
+Para desarrollar esta solución de la prueba utilizé ESM con el objetivo de poder manejar los datos de forma asyncrona. También desarrollé un pequeño sistema para permitir la escalabildad separando las responsabilidades para mantener aislada la parte del códgo que no cambia con facilidad. Se permite la extensiblidad con pequeñas configuraciones, para cubrir los casos en los que se quiera trabajar con otras rutas de la api.
 
-## Pasos a seguir
-
-Con los siguientes requerimientos implementar el desarrollo de la aplicación:
-
-1. Realizar las consulta a la API proporcionada y devolver los 20 registros correspondientes.
-2. Estructurar la información de la siguiente manera según lo pide el equipo de Frontend.
-   a. nombre //name
-   b. estado //reused
-   c. tipo //type
-   d. localidad //nationalities
-   e. lanzamientos //launch
-3. A través de la url "/lanzamientos", se debe enviar solo los lanzamientos realizados por Space X. (manufactured)
-4. Realizar y devolver los datos de las cargas de los lanzamientos realizados por Space X
    https://api.spacexdata.com/v4/payloads
 
-# Gracias por participar en el proceso de selección :D
+# Si desea aportar con cualquier feedback, con gue¿sto sera recibido. Gracias
