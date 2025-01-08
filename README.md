@@ -8,4 +8,4 @@ Para desarrollar esta solución de la prueba utilizé ESM con el objetivo de pod
 
    https://api.spacexdata.com/v4/payloads
 
-# Si desea aportar con cualquier feedback, con gue¿sto sera recibido. Gracias
+# Si desea aportar con cualquier feedback, con gusto sera recibido. Gracias
