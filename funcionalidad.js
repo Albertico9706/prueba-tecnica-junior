@@ -10,7 +10,7 @@ async function populate_board(classname){
     INDEX:"/gitproyects/soluciones_lab/prueba-tecnica-junior/"
   }
   console.log(window.location.pathname)
-  const pathname_length=window.location.pathname.includes(LOCATIONS.INDEX)?4:3
+  const pathname_length=window.location.pathname.includes(LOCATIONS.INDEX)?4:2
   const pathname=window.location.pathname===LOCATIONS.INDEX? "lanpads":window.location.pathname.split("/").at(pathname_length)
   console.log(pathname)
   const data=await get_spacexdata(pathname)
