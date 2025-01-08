@@ -12,7 +12,7 @@ async function populate_board(classname){
   }
   console.log(window.location.pathname)
   const pathname_length=DEV ?4:2
-  const pathname=window.location.pathname===LOCATIONS.INDEX? "lanpads":window.location.pathname.split("/").at(pathname_length)
+  const pathname=window.location.pathname===LOCATIONS.INDEX? "landpads":window.location.pathname.split("/").at(pathname_length)
   console.log(pathname)
   const data=await get_spacexdata(pathname)
   const schema=schemas[pathname]
