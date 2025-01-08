@@ -7,7 +7,7 @@ await populate_board("lanpad")
 
 async function populate_board(classname){
   const LOCATIONS={
-    INDEX:"/gitproyects/soluciones_lab/prueba-tecnica-junior/"
+    INDEX:window.location.pathname==="/gitproyects/soluciones_lab/prueba-tecnica-junior/"?"/gitproyects/soluciones_lab/prueba-tecnica-junior/":"/prueba-tecnica-junior/"
   }
   console.log(window.location.pathname)
   const pathname_length=window.location.pathname.includes(LOCATIONS.INDEX)?4:2
