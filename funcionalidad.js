@@ -9,6 +9,7 @@ async function populate_board(classname){
   const LOCATIONS={
     INDEX:"/gitproyects/soluciones_lab/prueba-tecnica-junior/"
   }
+  console.log(window.location.pathname)
   const pathname_length=window.location.pathname.includes(LOCATIONS.INDEX)?4:3
   const pathname=window.location.pathname===LOCATIONS.INDEX? "lanpads":window.location.pathname.split("/").at(pathname_length)
   console.log(pathname)
