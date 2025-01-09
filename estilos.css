@@ -19,20 +19,18 @@ body{
   grid-template-columns: 200px 1fr;
 }
 
+
 .cabecera{
   color: aliceblue;
   background: #00004f;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 8px;
 
   
    
-}m
-.cabecera>span:first-child{
-  font-size: 28px;
-  
-}
+}  
 
 .cabecera>div{
   justify-self: flex-end;
@@ -44,8 +42,12 @@ body{
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
-  background: rgb(229, 227, 248);
+  &:not(:has(.lanpad)){
+    display: none;
+  }
 }
+
+
 
 .lanpad{
   padding: 24px;
@@ -56,7 +58,6 @@ body{
   gap:20px;
   border-radius: 4px;
   box-shadow: 1px 1px 3px 1px darkgray;
-  background-color: rgb(255, 250, 243);
 }
 
 .lanpad>.head{
@@ -90,6 +91,7 @@ body{
   padding:2rem;
   border-left: 1px solid black;
   box-shadow: 3px 0 3px darkgray;
+  min-height: 100svh;
 }
 
 .navbar>ul{
@@ -168,6 +170,15 @@ h2 {
   padding: 8px 24px;
   font-size: 16px;
   font-weight: 500;
+}
+
+
+
+.links{
+  width: 160px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  background: linear-gradient(to left,transparent,#00000010, transparent);
 }
 
 @media screen and (max-width: 720px) {

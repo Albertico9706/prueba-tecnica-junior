@@ -12,9 +12,11 @@ async function populate_board(classname){
   }
   console.log(window.location.pathname)
   const pathname_length=DEV ?4:2
+  const index=window.location.pathname.split("/").indexOf("prueba-tecnica-junior")
   const pathname=window.location.pathname===LOCATIONS.INDEX? "landpads":window.location.pathname.split("/").at(pathname_length)
   console.log(pathname)
-  const data=await get_spacexdata(pathname)
+  const data=await get_spacexdata(pathname,DEV)
+  console.log(data)
   const schema=schemas[pathname]
   data.map((d)=>{
       const elements=create_elements(d,schema)
